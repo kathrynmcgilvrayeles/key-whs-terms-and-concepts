@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Key WHS Terms and Concepts for Dental Assistants</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f2f2f2;
+      color: #000;
+      padding: 20px;
+    }
+    h2 {
+      color: #532a8c;
+    }
+    .accordion {
+      background-color: #9d8abb;
+      color: #000;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: 0.4s;
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .accordion::after {
+      content: '\25BC';
+      font-size: 14px;
+      color: #532a8c;
+      margin-left: 10px;
+    }
+    .active::after {
+      content: '\25B2';
+    }
+    .active, .accordion:hover {
+      background-color: #532a8c;
+      color: #fff;
+    }
+    .panel {
+      padding: 15px;
+      display: none;
+      background-color: white;
+      color: #000;
+      overflow: hidden;
+      border-left: 4px solid #9d8abb;
+    }
+  </style>
+</head>
+<body>
+  <h2>Key WHS Terms for Dental Assistants</h2>
+
+  <button class="accordion">Hazard</button>
+  <div class="panel">
+    <p>A hazard is anything in the dental workplace that has the potential to cause harm, such as chemicals, sharps, or bodily fluids. Recognising hazards is the first step in preventing injury or illness.</p>
+  </div>
+
+  <button class="accordion">Risk</button>
+  <div class="panel">
+    <p>A risk is the likelihood that a hazard will actually cause harm. It involves assessing how serious the harm could be and how likely it is to happen.</p>
+  </div>
+
+  <button class="accordion">PPE (Personal Protective Equipment)</button>
+  <div class="panel">
+    <p>PPE includes items like gloves, masks, protective eyewear, and gowns. These are used to minimise exposure to hazards such as infection, chemicals, and radiation.</p>
+  </div>
+
+  <button class="accordion">Sharps Safety</button>
+  <div class="panel">
+    <p>Sharps include needles, scalers, and other instruments that can puncture skin. Safe handling, disposal in designated containers, and never recapping needles are essential practices to prevent injuries.</p>
+  </div>
+
+  <button class="accordion">Infection Control</button>
+  <div class="panel">
+    <p>Infection control refers to procedures used to prevent the spread of harmful microorganisms. This includes sterilisation, hand hygiene, and surface disinfection within the dental surgery.</p>
+  </div>
+
+  <button class="accordion">Incident Reporting</button>
+  <div class="panel">
+    <p>All workplace incidents, including near misses, must be reported and documented. This ensures proper follow-up, supports prevention strategies, and meets legal requirements.</p>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
