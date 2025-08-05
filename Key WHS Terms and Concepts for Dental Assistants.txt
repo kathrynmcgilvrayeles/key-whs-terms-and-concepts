@@ -77,9 +77,9 @@
     <p>Sharps include needles, scalers, and other instruments that can puncture skin. Safe handling, disposal in designated containers, and never recapping needles are essential practices to prevent injuries.</p>
   </div>
 
-  <button class="accordion">Infection Control</button>
+  <button class="accordion">Infection Prevention and Control</button>
   <div class="panel">
-    <p>Infection control refers to procedures used to prevent the spread of harmful microorganisms. This includes sterilisation, hand hygiene, and surface disinfection within the dental surgery.</p>
+    <p>Infection Prevention and Control refers to procedures used to prevent the spread of harmful microorganisms. This includes sterilisation, hand hygiene, and surface disinfection within the dental surgery.</p>
   </div>
 
   <button class="accordion">Incident Reporting</button>
@@ -103,3 +103,4 @@
   </script>
 </body>
 </html>
+
